@@ -32,6 +32,8 @@ Research directions:
 - Mechanistic interpretability
 - LLM Alignment
 - AI Ethics
+
+
 My overall goal is to bridge technical research in interpretability with the practical and social frameworks from AI Ethics, a topic I plan to explore in my master’s thesis next year.
 As a tool think mechanistic interpretability is crucial for AI alignment, as I don't believe we can control or manage a system whose underlying causal
 mechanisms we don't understand. As models become more capable, auditing them exclusively through black box analysis might become insufficient.
