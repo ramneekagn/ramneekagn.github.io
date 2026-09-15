@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vague Notes on a Quiet Afternoon
-date: 2026-09-15 23:00:00
+date: 2026-09-15 19:00:00
 description: A placeholder note containing lorem ipsum, images, and a little mathematics.
 tags: [notes, placeholder]
 categories: [misc]

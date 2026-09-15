@@ -8,3 +8,11 @@ nav_order: 3
 ---
 
 My research focuses on artificial intelligence and machine learning. Publications and preprints will be added here as they become available.
+
+{% include bib_search.liquid %}
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>
