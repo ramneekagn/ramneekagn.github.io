@@ -24,4 +24,8 @@ latest_posts:
 ---
 
 <!-- Write your biography below this line. -->
+
+Hi, I'm **Ramneek Agnihotri**. This is my personal website, where I share information about my background, interests, projects, and experience.
+
+I enjoy learning new technologies, solving problems, and building useful projects. This website is currently being updated, so please check back soon for more information.
 test
