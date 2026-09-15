@@ -25,6 +25,8 @@ latest_posts:
 
 <!-- Write your biography below this line. -->
 
+Masters student in Applied Computer Science at Ruhr University Bochum and Research Assistant at Research Center for Trustworthy Data Science and Security.
+
 I am interested in LLM interpretability and alignment research. 
 
 Research directions: 

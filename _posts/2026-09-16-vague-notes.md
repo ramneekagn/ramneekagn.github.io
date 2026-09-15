@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vague Notes on a Quiet Afternoon
+title: Test
 date: 2026-09-14 19:00:00
 description: A placeholder note containing lorem ipsum, images, and a little mathematics.
 tags: [notes, placeholder]
@@ -11,7 +11,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sem vel
 libero facilisis cursus. Praesent blandit, lorem at vulputate feugiat, neque
 erat tincidunt nunc, vitae posuere lorem nulla sed arcu.
 
-![A placeholder portrait](/assets/img/prof_pic.jpg){: width="420"px }
+![A placeholder portrait](/assets/img/prof_pic.jpg){: width="1ß"px }
 
 ## A Small Detour
 
@@ -30,7 +30,6 @@ $$
 \bar{f} = \frac{1}{b-a}\int_a^b f(x)\,dx.
 $$
 
-![Another view of the placeholder image](/assets/img/prof_pic.jpg){: width="260"px }
 
 ## Closing Thought
 
