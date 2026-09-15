@@ -9,22 +9,29 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
 <!-- Write your biography below this line. -->
 
-Hi, I'm **Ramneek Agnihotri**. I am interested in artificial intelligence research, with a focus on machine learning, deep learning, and responsible AI.
+I am interested in LLM interpretability and alignment research. 
 
-I use this site to share research notes, publications, and updates about my work. More details about my current projects and research interests will be added soon.
+Research directions: 
+- LLM Inner Alignment Problems: Alignment faking, Eval Awareness, Emergent Misalignment
+- Mechanistic interpretability
+- LLM Alignment
+- AI Ethics
+My overall goal is to bridge technical research in interpretability with the practical and social frameworks from AI Ethics, a topic I plan to explore in my master’s thesis next year.
+As a tool think mechanistic interpretability is crucial for AI alignment, as I don't believe we can control or manage a system whose underlying causal
+mechanisms we don't understand. As models become more capable, auditing them exclusively through black box analysis might become insufficient.
