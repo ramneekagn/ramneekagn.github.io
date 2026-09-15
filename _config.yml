@@ -2,16 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Your
+title: Ramneek Agnihotri
+first_name: Ramneek
 middle_name: ""
-last_name: Name
+last_name: Agnihotri
 contact_note: > # this note will be shown below the social icons in the about section
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-description: # add your own site description or leave empty
-keywords: # add your own keywords or leave empty
+description: AI research, publications, and notes by Ramneek Agnihotri.
+keywords: artificial intelligence, machine learning, AI research
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -119,8 +119,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: # blog_name will be displayed in your blog page
-blog_description: # add a description for your blog
+blog_name: AI research notes
+blog_description: Ideas and updates on artificial intelligence and machine learning.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

@@ -9,23 +9,22 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
 <!-- Write your biography below this line. -->
 
-Hi, I'm **Ramneek Agnihotri**. This is my personal website, where I share information about my background, interests, projects, and experience.
+Hi, I'm **Ramneek Agnihotri**. I am interested in artificial intelligence research, with a focus on machine learning, deep learning, and responsible AI.
 
-I enjoy learning new technologies, solving problems, and building useful projects. This website is currently being updated, so please check back soon for more information.
-test
+I use this site to share research notes, publications, and updates about my work. More details about my current projects and research interests will be added soon.
