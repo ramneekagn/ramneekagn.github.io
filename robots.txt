@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ramneekagnihotri.github.io/sitemap.xml
+Sitemap: https://ramneekagn.github.io/ramneekagnihotri.github.io/sitemap.xml
