@@ -1,21 +1,35 @@
 cv:
-  name:
-  label:
-  email:
-  location:
-  image: ""
-  summary:
-
-  social_networks:
-    # - network: GitHub
-    #   username: your_github_username
+  name: Ramneek Agnihotri
 
   sections:
-    Education: []
-    Experience: []
-    Awards: []
-    Publications: []
-    Skills: []
-    Languages: []
-    Interests: []
-    Certificates: []
+    Education:
+      - institution: Ruhr University Bochum
+        location: Bochum, Germany
+        studyType: Masters, Applied Computer science
+        start_date: 2025
+        end_date: 2026
+
+      - institution: TU Dortmund
+        location: Dortmund, Germany
+        studyType: Bachelors, Computer science
+        start_date: 2021
+        end_date: 2025
+
+    Experience:
+      - company: RC-Trust/AISOC Lab at RUB, 
+        position: Research Assistant
+        location: Bochum, Germany
+        start_date: Oct 2026
+        end_date: Present
+
+      - company: HRuC GmbH, 
+        position: Software Developer
+        location: Bochum,Germany
+        start_date: Sep 2025
+        end_date: Oct 2026
+
+      - company: Fraunhofer Insitute IML
+        position: Research Assistant
+        location: Dortmund, Germany
+        start_date: Aug 2024
+        end_date: Aug 2025
