@@ -63,11 +63,9 @@ reconstruction, while activating only 2 to 4 latents instead of 10 to
 {% include figure.liquid loading="eager" path="assets/img/task_vector_cleaning_algorithm.png" class="img-fluid rounded z-depth-1" width="100%" %}
 
 
-Concretely, Figure [1](#fig:tvc_visual){reference-type="ref"
-reference="fig:tvc_visual"} shows the mechanics of the algorithm. The
+Concretely, Figure [1] shows the mechanics of the algorithm. The
 authors take a concrete task vector, feed it into the residual stream of
-the LLM (in Figure [1](#fig:tvc_visual){reference-type="ref"
-reference="fig:tvc_visual"}, this is after block 1 for simplicity). The
+the LLM (in Figure [1], this is after block 1 for simplicity). The
 task vector gets passed through the SAE, de- and reconstructed, and
 finally injected into the residual stream after the norm and add
 operation. For a 0-shot prompt for the same task, target tokens are
