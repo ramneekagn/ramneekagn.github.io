@@ -24,6 +24,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<div style="display: flex; gap: 8px; margin: 12px 0 24px 0; flex-wrap: wrap;">
+  <a href="https://github.com/ramneekagn" class="btn btn-sm" role="button" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-github"></i>&nbsp; GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/ramneek-agnihotri-1b6a8b380/" class="btn btn-sm" role="button" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-linkedin"></i>&nbsp; Linked In
+  </a>
+</div>
+
+
 <!-- Write your biography below this line. -->
 
 Masters student in Applied Computer Science at [Ruhr University Bochum](https://informatik.rub.de/) and Research Assistant at [Research Center for Trustworthy Data Science and Security](https://rc-trust.ai/).
