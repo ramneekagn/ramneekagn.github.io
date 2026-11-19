@@ -53,7 +53,7 @@ Furthermore I want to bridge technical research in interpretability with the pra
 As a tool I think mechanistic interpretability is crucial for AI alignment, as I don't believe we should deploy systems whose underlying causal
 mechanisms we do not understand. As models become more capable, auditing them exclusively through black box analysis might become insufficient.
 
-Currently I am working on 
+Currently I am working on Natural Language Autoencoders and reliably evaluating Mechanistic Interpretability methods.
 
 <div class="projects">
   <div class="row row-cols-1 row-cols-md-2">
