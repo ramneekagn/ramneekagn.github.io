@@ -43,7 +43,7 @@ You can reach me at: ramneek.agnihotri@edu.rub.de
 Research directions: 
 - AI Alignment and Safety
 - Auditing LLMs through Interpretability methods 
-- The foundations of Interpretability and Neural Networks
+- The foundations of Neural Networks
 - Mechanistic Interpretability
 - AI Ethics 
 
@@ -52,6 +52,8 @@ What is the nature of intelligence in large language models, and how do they mak
 Furthermore I want to bridge technical research in interpretability with the practical and social frameworks from AI Ethics. 
 As a tool I think mechanistic interpretability is crucial for AI alignment, as I don't believe we should deploy systems whose underlying causal
 mechanisms we do not understand. As models become more capable, auditing them exclusively through black box analysis might become insufficient.
+
+Currently I am working on 
 
 <div class="projects">
   <div class="row row-cols-1 row-cols-md-2">
