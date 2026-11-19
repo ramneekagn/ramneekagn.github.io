@@ -2,7 +2,7 @@
 layout: page
 title: LLM Safety Harness
 description: Safety scaffold around LLMs with BERT models auditing input and outputs. Linear probes used for inner detection. All of them combined with an AND ensemble. 
-importance: 1
+importance: 2
 img: assets/img/architecture_llmsafetyharness.png
 github: https://github.com/ramneekagn/SafeguardLLM
 category: work

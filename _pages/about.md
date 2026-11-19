@@ -28,16 +28,26 @@ latest_posts:
 
 Masters student in Applied Computer Science at [Ruhr University Bochum](https://informatik.rub.de/) and Research Assistant at [Research Center for Trustworthy Data Science and Security](https://rc-trust.ai/).
 
-I am interested in LLM interpretability and alignment research. 
+You can reach me at: ramneek.agnihotri@edu.rub.de
 
 Research directions: 
-- LLM Inner Alignment Problems: Alignment faking, Eval Awareness, Emergent Misalignment
-- Mechanistic interpretability
-- LLM Alignment
-- AI Ethics
+- AI Alignment and Safety
+- Auditing LLMs through Interpretability methods 
+- The foundations of Interpretability and Neural Networks
+- Mechanistic Interpretability
+- AI Ethics 
 
+What is the nature of intelligence in large language models, and how do they make complex decisions? I want to approach these questions using the tools of interpretability and, with that understanding, build fairness and safety into AI models and prevent concrete harms such as cyberattacks and bias.
 
-My overall goal is to bridge technical research in interpretability with the practical and social frameworks from AI Ethics, a topic I plan to explore in my master’s thesis next year.
-As a tool think mechanistic interpretability is crucial for AI alignment, as I don't believe we can control or manage a system whose underlying causal
+Furthermore I want to bridge technical research in interpretability with the practical and social frameworks from AI Ethics. 
+As a tool I think mechanistic interpretability is crucial for AI alignment, as I don't believe we can control or manage a system whose underlying causal
 mechanisms we don't understand. As models become more capable, auditing them exclusively through black box analysis might become insufficient.
 
+<div class="projects">
+  <div class="row row-cols-1 row-cols-md-2">
+  {% assign sorted_projects = site.projects | sort: "importance" %}
+  {% for project in sorted_projects limit: 2 %}
+    {% include projects.liquid %}
+  {% endfor %}
+  </div>
+</div>
