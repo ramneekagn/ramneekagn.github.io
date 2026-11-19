@@ -50,8 +50,8 @@ Research directions:
 What is the nature of intelligence in large language models, and how do they make complex decisions? I want to approach these questions using the tools of interpretability and, with that understanding, build fairness and safety into AI models and prevent concrete harms such as cyberattacks and bias.
 
 Furthermore I want to bridge technical research in interpretability with the practical and social frameworks from AI Ethics. 
-As a tool I think mechanistic interpretability is crucial for AI alignment, as I don't believe we can control or manage a system whose underlying causal
-mechanisms we don't understand. As models become more capable, auditing them exclusively through black box analysis might become insufficient.
+As a tool I think mechanistic interpretability is crucial for AI alignment, as I don't believe we should deploy systems whose underlying causal
+mechanisms we do not understand. As models become more capable, auditing them exclusively through black box analysis might become insufficient.
 
 <div class="projects">
   <div class="row row-cols-1 row-cols-md-2">
