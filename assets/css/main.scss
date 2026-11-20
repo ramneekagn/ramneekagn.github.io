@@ -41,12 +41,12 @@
 
 /* 2. Color Palette & Variable Overrides */
 :root {
-  --bg: #F5F7F7;
+  --bg: #f7f7f5;
   --surface: #FCFDFD;
   --surface-soft: #EBF0F0;
   --border: #D5E0DF;
   --border-soft: #E4EBEB;
-  --text: #232A2E;
+  --text: #242d47;
   --text-soft: #414B50;
   --muted: #6E7B80;
 
@@ -54,7 +54,7 @@
   --accent-border: #B5CED4;
   --accent: #2B6777;
   --accent-ink: #1F4E5F;
-  --rubric: #9A6B32; /* Subtle warm ochre "printer's mark" accent */
+  --rubric: #6E7B80; /* Subtle warm ochre "printer's mark" accent */
 
   /* al-folio tokens */
   --global-bg-color: var(--bg) !important;
@@ -255,5 +255,60 @@ a {
   &::after {
     background-color: var(--rubric);
     transform: scaleX(1);
+  }
+}
+
+/* Make body links distinctly blue and underlined */
+.post-content a,
+.page-content a,
+article a,
+.profile a {
+  color: #5f789e;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: hsl(216, 91%, 42%);
+    text-decoration: none;
+  }
+}
+
+/* ==========================================================================
+   7. Buttons (Prussian Ink Solid Tags)
+   ========================================================================== */
+.publications a.btn,
+a.btn.btn-sm,
+.btn {
+  /* Color matches the top line of the navbar */
+  background-color: var(--accent-ink) !important;
+  color: #ffffff !important;
+  border: none !important;
+  text-decoration: none !important;
+
+  /* Clean typography & proportions */
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  padding: 0.25rem 0.6rem !important;
+  border-radius: 3px !important;
+
+  /* Simple, soft shadow (no inner highlight) */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) !important;
+  transition: all 0.15s ease !important;
+
+  /* Hover State: slightly deeper ink tone */
+  &:hover {
+    background-color: #163946 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16) !important;
+  }
+
+  /* Active/Click effect */
+  &:active {
+    transform: translateY(0);
+    box-shadow: none !important;
   }
 }
