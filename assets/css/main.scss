@@ -33,44 +33,43 @@
 @use "typograms";
 
 /* ==========================================================================
-   Editorial Warm Paper & Slate Theme (Spectral Font)
+   Mineral Paper & Prussian Ink Editorial Theme (Spectral Font)
    ========================================================================== */
 
 /* 1. Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
 /* 2. Color Palette & Variable Overrides */
 :root {
-  --bg: #FAF8F5;
-  --surface: #FFFFFF;
-  --surface-soft: #F4F1EA;
-  --border: #E7E3DA;
-  --border-soft: #EFECE5;
-  --text: #1F1E1C;
-  --text-soft: #4B4843;
-  --muted: #8A857C;
+  --bg: #F5F7F7;
+  --surface: #FCFDFD;
+  --surface-soft: #EBF0F0;
+  --border: #D5E0DF;
+  --border-soft: #E4EBEB;
+  --text: #232A2E;
+  --text-soft: #414B50;
+  --muted: #6E7B80;
 
-  --blue-50: #F2F7FC;
-  --blue-100: #E3EFFA;
-  --blue-200: #C6DFF5;
-  --blue-500: #5B96CE;
-  --blue-600: #467EB5;
-  --blue-ink: #2E5A88;
+  --accent-soft: #E6EFF1;
+  --accent-border: #B5CED4;
+  --accent: #2B6777;
+  --accent-ink: #1F4E5F;
+  --rubric: #9A6B32; /* Subtle warm ochre "printer's mark" accent */
 
   /* al-folio tokens */
   --global-bg-color: var(--bg) !important;
   --global-code-bg-color: var(--surface-soft) !important;
   --global-text-color: var(--text) !important;
   --global-text-color-light: var(--muted) !important;
-  --global-theme-color: var(--blue-600) !important;
-  --global-hover-color: var(--blue-ink) !important;
+  --global-theme-color: var(--accent) !important;
+  --global-hover-color: var(--accent-ink) !important;
   --global-footer-bg-color: var(--bg) !important;
   --global-footer-text-color: var(--muted) !important;
   --global-divider-color: var(--border) !important;
   --global-card-bg-color: var(--surface) !important;
 }
 
-/* 3. Typography */
+/* 3. Base Paper & Subtle Grain Texture */
 body {
   background-color: var(--bg) !important;
   color: var(--text) !important;
@@ -78,9 +77,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Headings with Spectral Serif */
-h1, h2, h3, h4, h5, h6, 
-.navbar-brand, 
+/* Barely-there cotton paper grain overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.022;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--accent-ink);
+}
+
+/* 4. Typography (Spectral Serif for literary / handcrafted warmth) */
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
 .post-title,
 .card-title {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
@@ -89,52 +107,153 @@ h1, h2, h3, h4, h5, h6,
   color: var(--text) !important;
 }
 
+/* Italic Spectral motif for metadata, captions & venues */
+.post-meta,
+.post-description,
+.caption,
+figcaption,
+.publications ol.bibliography li .periodical {
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
+  font-style: italic;
+  color: var(--muted);
+}
+
+blockquote {
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
+  font-style: italic;
+  color: var(--text-soft) !important;
+  border-left: 2px solid var(--rubric) !important;
+  background-color: transparent !important;
+  padding-left: 1.15rem;
+}
+
+/* Short centered editorial divider inside posts & pages */
+.post hr {
+  border: 0 !important;
+  border-top: 1px solid var(--border) !important;
+  width: 72px;
+  margin: 2.25rem auto;
+}
+
 code, pre, kbd, samp {
   font-family: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace !important;
   background-color: var(--surface-soft) !important;
 }
 
-/* 4. Cards (Cosmetic styling only - keeps Tailwind grid intact) */
+pre {
+  border-left: 3px solid var(--accent) !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+/* 5. Cards (Flatter print-inspired surface, keeps Tailwind/Bootstrap grid intact) */
 .card {
   background-color: var(--surface) !important;
   border: 1px solid var(--border) !important;
-  border-radius: 12px !important;
-  box-shadow: 0 1px 3px rgba(31, 30, 28, 0.03), 0 8px 24px rgba(31, 30, 28, 0.025) !important;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  transition: border-color 0.15s ease, background-color 0.15s ease !important;
 
   &:hover {
-    border-color: var(--blue-200) !important;
-    box-shadow: 0 4px 16px rgba(46, 90, 136, 0.08) !important;
+    background-color: #FFFFFF !important;
+    border-color: var(--accent-border) !important;
+    box-shadow: none !important;
   }
 }
 
-/* 5. Buttons & Badges (PDF, Code, BibTeX) */
+/* 6. Profile Photo Mat Frame & Hairline Publication List */
+.profile img {
+  padding: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border);
+
+  &:not(.rounded-circle) {
+    border-radius: 3px !important;
+  }
+}
+
+.publications ol.bibliography li {
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* 7. Buttons & Badges (PDF, Code, BibTeX) */
 a.btn.btn-sm,
-.btn,
-.badge {
-  background: var(--blue-50) !important;
-  border: 1px solid var(--blue-200) !important;
-  color: var(--blue-ink) !important;
-  border-radius: 8px !important;
+.btn {
+  background: transparent !important;
+  border: 1px solid var(--accent-border) !important;
+  color: var(--accent-ink) !important;
+  border-radius: 3px !important;
   font-family: 'Inter', sans-serif !important;
   font-weight: 500 !important;
-  transition: all 0.12s ease !important;
+  transition: all 0.15s ease !important;
 
   &:hover {
-    background: var(--blue-100) !important;
-    border-color: var(--blue-500) !important;
-    color: var(--blue-ink) !important;
+    background: var(--accent-ink) !important;
+    border-color: var(--accent-ink) !important;
+    color: #FFFFFF !important;
   }
 }
 
-/* 6. Links & Navbar border */
+.badge {
+  background: var(--surface-soft) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-soft) !important;
+  border-radius: 3px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* 8. Links & Bookmark Navbar */
 a {
-  color: var(--blue-ink);
+  color: var(--accent-ink);
+  text-decoration-color: var(--accent-border);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
   &:hover {
-    color: var(--blue-600);
+    color: var(--accent);
+    text-decoration-color: var(--accent-ink);
   }
 }
 
 .navbar {
-  border-bottom: 1px solid var(--border-soft);
+  background-color: var(--bg) !important;
+  border-top: 3px solid var(--accent-ink);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-nav .nav-item > a.nav-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    height: 1.5px;
+    background-color: var(--accent-ink);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.18s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.navbar-nav .nav-item.active > a.nav-link {
+  color: var(--text) !important;
+
+  &::after {
+    background-color: var(--rubric);
+    transform: scaleX(1);
+  }
 }
