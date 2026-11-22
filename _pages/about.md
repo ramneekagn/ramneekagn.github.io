@@ -41,11 +41,10 @@ Masters student in Applied Computer Science at [Ruhr University Bochum](https://
 You can reach me at: ramneek.agnihotri@edu.rub.de
 
 Research directions: 
-- AI Alignment and Safety
-- Auditing LLMs through Interpretability methods 
-- The foundations of Neural Networks
-- Mechanistic Interpretability
-- AI Ethics 
+- Applying and developing Interpretability Methods  
+- AI Safety and Alignment
+- Theoretical foundations of AI 
+- AI Ethics
 
 What is the nature of intelligence in large language models, and how do they make complex decisions? I want to approach these questions using the tools of interpretability and, with that understanding, build fairness and safety into AI models and prevent concrete harms such as cyberattacks and bias.
 
