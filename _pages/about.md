@@ -29,7 +29,7 @@ latest_posts:
     <i class="fa-brands fa-github"></i>&nbsp; GitHub
   </a>
   <a href="https://www.linkedin.com/in/ramneek-agnihotri-1b6a8b380/" class="btn btn-sm" role="button" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-linkedin"></i>&nbsp; Linked In
+    <i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn
   </a>
 </div>
 
