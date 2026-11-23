@@ -5,7 +5,7 @@ description: Audit the impact of quantization on capability and safety domains i
 importance: 1
 img: assets/img/jagged_robustness.png
 github: https://github.com/LucianoXu/QuantBeyoundEfficiency/tree/main
-paper: https://github.com/ramneekagn/jagged_robustness_workshop/blob/main/llm_robustness_paper.pdf
+paper: https://arxiv.org/pdf/2611.27424
 ---
 Quantization enables efficient inference in language
 models through model parameter compression. This work audits
